@@ -68,8 +68,8 @@ public class lecturedossier {
                        Map.Entry<String,String> entry2 = (Map.Entry<String, String>)it2.next();
                         String cle2 = entry2.getKey();
                         String valeur2 = entry2.getValue();
-                       //  Integer distance = levenshteinDistance(valeur1, valeur2);
-                            if(valeur1.equals(valeur2)){
+                       Integer distance = levenshteinDistance(valeur1, valeur2);
+                            if(distance == 0){
                                 k++;
                                 if(k>1){
                                 it2.remove();
